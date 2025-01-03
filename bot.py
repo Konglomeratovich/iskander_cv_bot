@@ -17,7 +17,7 @@ def welcome(message):
 	item2 = types.KeyboardButton("😋 Написать мне в личку")
 	item3 = types.KeyboardButton("👍 Мой сайт")
 
-	markup.add(item1, item2)
+	markup.add(item1, item2, item3)
 
 	bot.send_message(message.chat.id, "Привет тебе от краба, {0.first_name}!".format(message.from_user, bot.get_me()),
 		parse_mode='html', reply_markup=markup)
